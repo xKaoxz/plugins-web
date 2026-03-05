@@ -8,14 +8,12 @@
 </head>
 <body>
 
-<!-- Pantalla de inicio -->
+<!-- Landing page -->
 <section id="landing">
   <div class="landing-content">
     <h1>Bienvenido a PluginHub</h1>
     <p>Busca aquí el plugin perfecto para tu servidor. ¡Gratis y fácil de descargar!</p>
-    
     <input id="landing-search" type="text" placeholder="Busca un plugin...">
-    
     <div class="landing-buttons">
       <button onclick="goToSection('plugins-section')">Plugins</button>
       <button onclick="goToSection('info-section')">Info</button>
@@ -23,14 +21,14 @@
   </div>
 </section>
 
-<!-- Sección de plugins -->
+<!-- Sección de Plugins -->
 <section id="plugins-section">
   <h2 class="section-title">Plugins</h2>
   <div id="category-filter" style="text-align:center; margin:1rem 0;"></div>
   <main class="plugin-grid" id="plugins"></main>
 </section>
 
-<!-- Sección de info -->
+<!-- Sección de Info -->
 <section id="info-section">
   <h2 class="section-title">Información</h2>
   <p style="text-align:center; padding:1rem;">Aquí puedes poner instrucciones, guías o noticias sobre tus plugins y servidores.</p>
@@ -41,83 +39,5 @@
 </footer>
 
 <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>PluginHub</title>
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
-<nav>
-
-<div class="logo">
-PluginHub
-</div>
-
-</nav>
-
-<header>
-
-<h1>Descarga Plugins para tu servidor</h1>
-<p>Plugins gratuitos y de pago que doy gratis para mejorar tu servidor!</p>
-
-<input id="search" type="text" placeholder="Buscar plugin...">
-
-</header>
-
-<main class="plugin-grid" id="plugins">
-
-<div class="plugin">
-
-<img src="icons/plugin1.png">
-
-<h2>Vulcan Anticheat</h2>
-
-<p>Sistema de anticheat completo y originalmente cuesta 14 USD (Su dependencia es packetevents lo tenes que descargar junto el Vulcan).</p>
-
-<span class="version">Version 1.0</span>
-
-<a href="plugins/Vulcan-Anticheat.jar" class="download">
-Descargar
-</a>
-
-</div>
-
-<div class="plugin">
-
-<img src="icons/plugin2.png">
-
-<h2>PacketEvents</h2>
-
-<p>Plugin util y es dependencia de algunos plugin como el Vulcan o otros.</p>
-
-<span class="version">Version 2.3</span>
-
-<a href="plugins/PacketEvents" class="download">
-Descargar
-</a>
-
-</div>
-
-</main>
-
-<footer>
-
-<p>© 2026 Horus-Clan</p>
-
-</footer>
-
-<script src="script.js"></script>
-
 </body>
 </html>
