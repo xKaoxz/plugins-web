@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>PluginHub</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<header>
-<h1>PluginHub</h1>
-<p>Descarga mis plugins para servidores</p>
+<nav>
 
-<input type="text" id="search" placeholder="Buscar plugin...">
+<div class="logo">
+PluginHub
+</div>
+
+</nav>
+
+<header>
+
+<h1>Descarga Plugins</h1>
+<p>Plugins optimizados y gratuitos</p>
+
+<input id="search" type="text" placeholder="Buscar plugin...">
+
 </header>
 
-<div class="plugins" id="plugins">
+<main class="plugin-grid" id="plugins">
 
 <div class="plugin">
-<img src="plugin1.png">
+
+<img src="icons/plugin1.png">
+
 <h2>EconomyPlus</h2>
-<p>Sistema de economía para servidores</p>
-<span class="version">v1.0</span>
-<a href="plugins/economyplus.jar" class="download">Descargar</a>
+
+<p>Sistema de economía completo.</p>
+
+<span class="version">Version 1.0</span>
+
+<a href="plugins/plugin1.jar" class="download">
+Descargar
+</a>
+
 </div>
 
 <div class="plugin">
-<img src="plugin2.png">
+
+<img src="icons/plugin2.png">
+
 <h2>TeleportX</h2>
-<p>Teleport rápido y simple</p>
-<span class="version">v2.3</span>
-<a href="plugins/teleportx.jar" class="download">Descargar</a>
-</div>
+
+<p>Teleport rápido para servidores.</p>
+
+<span class="version">Version 2.3</span>
+
+<a href="plugins/plugin2.jar" class="download">
+Descargar
+</a>
 
 </div>
+
+</main>
+
+<footer>
+
+<p>© 2026 PluginHub</p>
+
+</footer>
 
 <script src="script.js"></script>
 
