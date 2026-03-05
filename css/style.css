@@ -2,17 +2,53 @@ body{
 font-family: Arial;
 background:#0f172a;
 color:white;
-text-align:center;
+margin:0;
 }
 
-.plugin{
+header{
+background:#020617;
+padding:20px;
+display:flex;
+justify-content:space-between;
+}
+
+nav a{
+margin:10px;
+color:#38bdf8;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:100px;
+}
+
+.boton{
+background:#38bdf8;
+padding:12px 20px;
+border-radius:8px;
+color:black;
+}
+
+.plugin-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,250px);
+gap:20px;
+padding:40px;
+}
+
+.plugin-card{
 background:#1e293b;
 padding:20px;
-margin:20px;
 border-radius:10px;
 }
 
-a{
-color:#38bdf8;
+.download{
+display:block;
+margin:10px;
+background:#22c55e;
+padding:10px;
+border-radius:6px;
+color:black;
 text-decoration:none;
 }
