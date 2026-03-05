@@ -6,7 +6,7 @@
     "versions": [
       { "platform": "Paper/Purpur", "version": "Ultima", "download": "plugins/Vulcan-Anticheat-Paper.jar" },
     ],
-    "icon": "icons/plugin1.png"
+    "icon": "icons/Vulcan.png"
   },
   {
     "name": "PacketEvents",
@@ -15,6 +15,6 @@
     "versions": [
       { "platform": "Purpur", "version": "Ultima", "download": "plugins/PacketEvents-Paper.jar" },
     ],
-    "icon": "icons/plugin2.png"
+    "icon": "icons/Packetevents.png"
   }
 ]
