@@ -1,3 +1,25 @@
+function goToSection(id){
+  const section = document.getElementById(id);
+  if(section){
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+// Búsqueda desde landing
+const landingSearch = document.getElementById("landing-search");
+landingSearch?.addEventListener("keypress", function(e){
+  if(e.key === "Enter"){
+    const query = landingSearch.value.toLowerCase();
+    const pluginsSection = document.getElementById("plugins-section");
+    pluginsSection.scrollIntoView({ behavior: "smooth" });
+
+    // Filtrar plugins si ya están cargados
+    document.querySelectorAll(".plugin").forEach(plugin => {
+      const title = plugin.querySelector("h2").textContent.toLowerCase();
+      plugin.style.display = title.includes(query) ? "block" : "none";
+    });
+  }
+});
 // Elementos
 const searchInput = document.getElementById("search");
 const pluginsContainer = document.getElementById("plugins");
