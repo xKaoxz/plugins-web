@@ -13,8 +13,7 @@
     "description": "Plugin útil y dependencia de otros plugins.",
     "categories": ["Utility"],
     "versions": [
-      { "platform": "Paper", "version": "2.3", "download": "plugins/PacketEvents-Paper.jar" },
-      { "platform": "Spigot", "version": "2.3", "download": "plugins/PacketEvents-Spigot.jar" }
+      { "platform": "Purpur", "version": "Ultima", "download": "plugins/PacketEvents-Paper.jar" },
     ],
     "icon": "icons/plugin2.png"
   }
