@@ -1,3 +1,4 @@
+// Navegación landing
 function goToSection(id){
   const section = document.getElementById(id);
   if(section){
@@ -5,34 +6,18 @@ function goToSection(id){
   }
 }
 
-// Búsqueda desde landing
-const landingSearch = document.getElementById("landing-search");
-landingSearch?.addEventListener("keypress", function(e){
-  if(e.key === "Enter"){
-    const query = landingSearch.value.toLowerCase();
-    const pluginsSection = document.getElementById("plugins-section");
-    pluginsSection.scrollIntoView({ behavior: "smooth" });
-
-    // Filtrar plugins si ya están cargados
-    document.querySelectorAll(".plugin").forEach(plugin => {
-      const title = plugin.querySelector("h2").textContent.toLowerCase();
-      plugin.style.display = title.includes(query) ? "block" : "none";
-    });
-  }
-});
 // Elementos
+const landingSearch = document.getElementById("landing-search");
 const searchInput = document.getElementById("search");
 const pluginsContainer = document.getElementById("plugins");
+const categoryFilter = document.getElementById("category-filter");
 
-// Opcional: contenedor para filtros
-const categoryFilter = document.getElementById("category-filter"); 
-
-// Cargar plugins
+// Cargar plugins desde JSON
 fetch('plugins.json')
   .then(res => res.json())
   .then(plugins => {
-    
-    // Obtener categorías únicas para filtros
+
+    // Generar filtros de categorías
     const allCategories = [...new Set(plugins.flatMap(p => p.categories))];
     if(categoryFilter){
       allCategories.forEach(cat => {
@@ -48,19 +33,23 @@ fetch('plugins.json')
     // Render inicial
     renderPlugins(plugins);
 
-    // Búsqueda en tiempo real
-    searchInput.addEventListener("input", () => {
-      const filter = searchInput.value.toLowerCase();
-      renderPlugins(plugins.filter(p => p.name.toLowerCase().includes(filter)));
+    // Búsqueda desde landing
+    landingSearch?.addEventListener("keypress", function(e){
+      if(e.key === "Enter"){
+        const query = landingSearch.value.toLowerCase();
+        document.getElementById("plugins-section").scrollIntoView({ behavior: "smooth" });
+        renderPlugins(plugins.filter(p => p.name.toLowerCase().includes(query)));
+      }
     });
 
+    // Render plugins dinámico
     function renderPlugins(pluginList){
       pluginsContainer.innerHTML = "";
       pluginList.forEach(plugin => {
         const article = document.createElement("article");
         article.classList.add("plugin");
 
-        // Crear botones de versiones
+        // Versiones por plataforma
         let versionsHTML = plugin.versions.map(v => 
           `<a href="${v.download}" class="download">${v.platform} ${v.version}</a>`
         ).join(' ');
