@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Vulcan Anticheat",
+    "description": "Sistema de anticheat completo. Dependencia: PacketEvents.",
+    "version": "1.0",
+    "icon": "icons/plugin1.png",
+    "download": "plugins/Vulcan-Anticheat.jar"
+  },
+  {
+    "name": "PacketEvents",
+    "description": "Plugin útil y dependencia de otros plugins.",
+    "version": "2.3",
+    "icon": "icons/plugin2.png",
+    "download": "plugins/PacketEvents.jar"
+  }
+]
