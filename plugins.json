@@ -2,15 +2,21 @@
   {
     "name": "Vulcan Anticheat",
     "description": "Sistema de anticheat completo. Dependencia: PacketEvents.",
-    "version": "1.0",
-    "icon": "icons/plugin1.png",
-    "download": "plugins/Vulcan-Anticheat.jar"
+    "categories": ["AntiCheat"],
+    "versions": [
+      { "platform": "Paper", "version": "1.0", "download": "plugins/Vulcan-Anticheat-Paper.jar" },
+      { "platform": "Spigot", "version": "1.0", "download": "plugins/Vulcan-Anticheat-Spigot.jar" }
+    ],
+    "icon": "icons/plugin1.png"
   },
   {
     "name": "PacketEvents",
     "description": "Plugin útil y dependencia de otros plugins.",
-    "version": "2.3",
-    "icon": "icons/plugin2.png",
-    "download": "plugins/PacketEvents.jar"
+    "categories": ["Utility"],
+    "versions": [
+      { "platform": "Paper", "version": "2.3", "download": "plugins/PacketEvents-Paper.jar" },
+      { "platform": "Spigot", "version": "2.3", "download": "plugins/PacketEvents-Spigot.jar" }
+    ],
+    "icon": "icons/plugin2.png"
   }
 ]
