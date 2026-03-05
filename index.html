@@ -2,32 +2,40 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Plugins</title>
+<title>PluginHub</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<h1>Mis Plugins</h1>
-<p>Descarga mis plugins gratis</p>
+<h1>PluginHub</h1>
+<p>Descarga mis plugins para servidores</p>
+
+<input type="text" id="search" placeholder="Buscar plugin...">
 </header>
 
-<div class="container">
+<div class="plugins" id="plugins">
 
 <div class="plugin">
-<h2>Plugin 1</h2>
-<p>Un plugin increíble para tu servidor.</p>
-<a href="plugin1.zip" class="btn">Descargar</a>
+<img src="plugin1.png">
+<h2>EconomyPlus</h2>
+<p>Sistema de economía para servidores</p>
+<span class="version">v1.0</span>
+<a href="plugins/economyplus.jar" class="download">Descargar</a>
 </div>
 
 <div class="plugin">
-<h2>Plugin 2</h2>
-<p>Mejora tu servidor con este plugin.</p>
-<a href="plugin2.zip" class="btn">Descargar</a>
+<img src="plugin2.png">
+<h2>TeleportX</h2>
+<p>Teleport rápido y simple</p>
+<span class="version">v2.3</span>
+<a href="plugins/teleportx.jar" class="download">Descargar</a>
 </div>
 
 </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
