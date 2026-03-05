@@ -4,8 +4,7 @@
     "description": "Sistema de anticheat completo. Dependencia: PacketEvents.",
     "categories": ["AntiCheat"],
     "versions": [
-      { "platform": "Paper", "version": "1.0", "download": "plugins/Vulcan-Anticheat-Paper.jar" },
-      { "platform": "Spigot", "version": "1.0", "download": "plugins/Vulcan-Anticheat-Spigot.jar" }
+      { "platform": "Paper/Purpur", "version": "Ultima", "download": "plugins/Vulcan-Anticheat-Paper.jar" },
     ],
     "icon": "icons/plugin1.png"
   },
